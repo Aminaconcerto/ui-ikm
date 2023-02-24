@@ -1,0 +1,718 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/raleway-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Semibold';
+    src: url('../fonts/raleway-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'), url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight_italic';
+    src: url('../fonts/poppins-lightitalic-webfont.woff2') format('woff2'), url('../fonts/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'), url('../fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'), url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Raleway-Medium';
+    color: #000;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    background: #FFF;
+}
+
+a,
+a:link,
+a:visited {
+    outline: none;
+    text-decoration: none;
+    -moz-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    border: none;
+    margin: 0px;
+    max-width: 100%;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 28px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+form,
+input,
+select,
+textarea,
+p {
+    margin: 0px;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time {
+    display: block;
+    margin: 0px;
+    padding: 0;
+}
+
+.customClear {
+    clear: both;
+    font-size: 0em;
+    line-height: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*IE below 9*/
+
+#ieWrapper {
+    background: #000;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.ieHolder {
+    position: relative;
+    width: 555px;
+    padding: 20px;
+    margin: 200px auto 0 auto;
+    background: #FFF;
+    border: 7px solid #2b2927;
+}
+
+.btnIeUpdate {
+    background: url(../images/btnIeUpdate.jpg) 0 0 no-repeat;
+    width: 144px;
+    height: 37px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    line-height: 37px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.ieLogo {
+    float: left;
+    width: 134px;
+    height: 139px;
+    background: url(../images/ieLogo.jpg) no-repeat 0 0;
+}
+
+.ieContent {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    color: #666;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.ieContent strong {
+    margin: 0 0 15px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px dashed #cccccc;
+    display: block;
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+
+/*End IE below 9*/
+
+#page_header {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+
+.page_center {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page_logo {
+    max-width: 600px;
+    width: 100%;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.page_logo h1 {
+    color: #fff;
+}
+
+.top_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+}
+
+.dropbtn {
+    background-color: #ed1c24 !important;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+
+.banner_content {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner_text {
+    left: 6%;
+    position: absolute;
+    width: 47%;
+    text-align: left;
+    z-index: 9;
+}
+
+.banner_text h1 {
+    font-size: 62px;
+    color: #fff;
+    text-align: left;
+    line-height: 62px;
+    font-family: 'Raleway-Bold';
+}
+
+.header_menu {
+    position: relative;
+    display: block;
+    z-index: 10;
+    width: 17%;
+}
+
+.header_menu>li a {
+    border-radius: 15px;
+}
+
+.header_menu ul {
+    background: #26252c;
+    width: 100%;
+    list-style: none;
+    padding: 15px 0;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+}
+
+.header_menu ul::after {
+    top: -8px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 12px solid #26252c;
+}
+
+.header_menu ul a {
+    color: #fff;
+    font-size: 14px;
+    background: none;
+    height: auto;
+    margin: 0;
+    padding: 9px 4px;
+    display: block;
+    border-bottom: 1px solid #38383c;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.header_menu ul li {
+    padding: 0 15px;
+}
+
+.inner_header {
+    border: none;
+    position: relative;
+    z-index: 10;
+}
+
+.page_footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #313038;
+    color: #fff;
+    padding: 23px 0
+}
+
+.page_logo {
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.page_footer .page_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    background-image: url(../images/searchIcon.png);
+    background-size: 17%;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    background-color: #cf361c;
+    border: none;
+    color: #fff;
+    margin: 40px 0;
+    border-radius: 14px;
+}
+
+.advanced-search {
+    margin: 40px 0;
+}
+
+input#subscribeNews {
+    width: 23px;
+    margin-right: 10px;
+    height: 23px;
+    margin-left: 70px;
+}
+
+.banner_content img {
+    display: block;
+}
+
+.banner_content .banner_text {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.banner_content .banner_text h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c3c3c3;
+    border-radius: 100%;
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ed1c24;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    background: #c3c3c3;
+}
+
+[type="radio"]:not(:checked)+label:before {
+    border: 1px solid #c3c3c3 !important;
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    border: 1px solid #ed1c24;
+}
+
+.radio_group form p {
+    margin-left: 15px;
+}
+
+.form_information {
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8e7ed;
+    border-radius: 15px;
+}
+
+.form_information h3 {
+    text-align: left;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+.btn_upload {
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: 'Raleway-Semibold';
+    line-height: 32px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 254px;
+    margin-top: 40px;
+    background-color: #cf361c;
+    -webkit-box-shadow: 0px 5px 12px -6px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 5px 12px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 12px -6px rgb(0 0 0 / 75%);
+}
+
+.form_information form {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 35px 50px 35px;
+}
+
+.form_input {
+    font-family: 'Raleway-Medium';
+    font-size: 15px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-form {
+    width: 20%;
+}
+
+label {
+    margin: 5px 10px 5px 0;
+    font-family: 'Raleway-Medium';
+    font-size: 15px;
+    color: #000;
+}
+
+input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #fff;
+    border: 1px solid #ebebf1;
+}
+
+ ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+ :-ms-input-placeholder {
+    color: #fff;
+}
+
+ ::-ms-input-placeholder {
+    color: #fff;
+}
+
+.form_input_aadhar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.form_input_div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.form_input_div input {
+    width: 30%;
+}
+
+.help-div h6 {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.help-tip {
+    position: relative;
+    top: 0;
+    right: 0;
+    text-align: center;
+    background-color: #e14126;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+    margin-right: 10px;
+}
+
+.help-tip:before {
+    content: '?';
+    font-weight: bold;
+    color: #fff;
+}
+
+.help-tip:hover p {
+    display: block;
+    transform-origin: 100% 0%;
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.help-tip p {
+    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    left: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before {
+    /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #1E2021;
+    left: 8px;
+    top: -12px;
+}
+
+.help-tip p:after {
+    /* Prevents the tooltip from being hidden */
+    width: 100%;
+    height: 40px;
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+input[type=radio].required::after {
+    border-radius: 100%;
+}
